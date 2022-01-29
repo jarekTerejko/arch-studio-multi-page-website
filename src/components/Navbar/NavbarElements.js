@@ -3,6 +3,10 @@ import { Link, NavLink } from "react-router-dom";
 
 export const NavbarWrapper = styled.nav`
   padding: 5.6rem 0;
+
+  @media screen and (max-width: 560px) {
+    padding: 3rem 0;
+  }
 `;
 
 export const NavbarInnerWrapper = styled.div`
@@ -10,6 +14,11 @@ export const NavbarInnerWrapper = styled.div`
   align-items: center;
 
   position: relative;
+  z-index: 1;
+
+  @media screen and (max-width: 730px) {
+    justify-content: space-between;
+  }
 `;
 
 export const NavbarSiteLinkR = styled(Link)``;
@@ -25,7 +34,7 @@ export const NavbarMenuBtn = styled.button`
   cursor: pointer;
   display: none;
 
-  @media screen and (max-width: 670px) {
+  @media screen and (max-width: 730px) {
     display: flex;
   }
 `;
@@ -36,6 +45,29 @@ export const NavbarNavItems = styled.ul`
   align-items: center;
   list-style: none;
   transition: var(--transition);
+
+  @media screen and (max-width: 1000px) {
+    margin-left: 4rem;
+  }
+
+  @media screen and (max-width: 730px) {
+    position: absolute;
+    left: 0;
+    top: 96px;
+    margin-left: 0;
+    flex-direction: column;
+    z-index: 0;
+    background: var(--color-white);
+    width: calc(100% - 200px);
+    width: 100%;
+    padding: 1.5rem;
+    transform: ${(props) =>
+      props.isOpen ? `translateX(0)` : "translateX(-130%)"};
+  }
+
+  @media screen and (max-width: 560px) {
+    top: 70px;
+  }
 `;
 
 export const NavbarNavItem = styled.li`
@@ -57,7 +89,6 @@ export const NavbarNavLinkR = styled(NavLink)`
 export const NavbarPageIdentifier = styled.span`
   display: inline-block;
   color: var(--color-grey);
-  /* color: var(--color-darkgrey); */
   position: absolute;
   left: -82.5px;
   top: 0px;
@@ -68,12 +99,15 @@ export const NavbarPageIdentifier = styled.span`
   padding-left: 86px;
   text-transform: uppercase;
 
+  @media screen and (max-width: 1000px) {
+    left: -50px;
+  }
+
   &::before {
     content: "";
     position: absolute;
     height: 1px;
     background: var(--color-grey);
-    /* background: var(--color-darkgrey); */
     width: 96px;
     top: 6px;
     left: -64px;

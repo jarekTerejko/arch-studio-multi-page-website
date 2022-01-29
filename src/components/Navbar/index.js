@@ -59,18 +59,22 @@ const Navbar = () => {
             <NavbarPageIdentifier>
               {displayLocation(location.pathname)}
             </NavbarPageIdentifier>
-            <NavbarSiteLinkR to="/">
+            <NavbarSiteLinkR to="/" onClick={closeMenu}>
               <ImageEl src={Logo} alt="Logo" />
             </NavbarSiteLinkR>
-            <NavbarNavItems>
+            <NavbarNavItems isOpen={isOpen} >
               {paths.map((link, i) => {
-                return (
-                  <NavbarNavItem key={i}>
-                    <NavbarNavLinkR to={link.path} onClick={closeMenu}>
-                      {link.name}
-                    </NavbarNavLinkR>
-                  </NavbarNavItem>
-                );
+                if (i === 0) {
+                  return null;
+                } else {
+                  return (
+                    <NavbarNavItem key={i}>
+                      <NavbarNavLinkR to={link.path} onClick={closeMenu}>
+                        {link.name}
+                      </NavbarNavLinkR>
+                    </NavbarNavItem>
+                  );
+                }
               })}
             </NavbarNavItems>
             <NavbarMenuBtn
