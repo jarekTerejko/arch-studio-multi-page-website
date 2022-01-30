@@ -10,6 +10,6 @@ export const ContainerEl = styled.div`
   }
   
   @media screen and (max-width: 560px) {
-    padding: ${(props) => (props.fullWithMobile ? "0" : "0 2rem")};
+    padding: ${(props) => (props.fullWithMobile ? "0" : "0 3rem")};
   }
 `;
