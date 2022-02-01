@@ -1,4 +1,5 @@
 import { ContainerEl } from "../components/Container/ContainerElement";
+import HomePageBanner from "../components/HomePageBanner";
 import HomePageHero from "../components/HomePageHero";
 
 import Loader from "../components/Loader";
@@ -19,6 +20,7 @@ const Home = () => {
         <>
           <Slider data={data[0].slider} />
           <HomePageHero data={data[0].HomePageWelcome} />
+          <HomePageBanner data={data[0].HomePageBannerImgs} />
         </>
       )}
     </>
