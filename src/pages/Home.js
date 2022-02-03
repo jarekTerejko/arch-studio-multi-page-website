@@ -1,7 +1,7 @@
 import { ContainerEl } from "../components/Container/ContainerElement";
 import HomePageBanner from "../components/HomePageBanner";
+import HomePageFeatured from "../components/HomePageFeatured";
 import HomePageHero from "../components/HomePageHero";
-
 import Loader from "../components/Loader";
 import Slider from "../components/Slider";
 import useFetch from "../useFetch";
@@ -21,6 +21,7 @@ const Home = () => {
           <Slider data={data[0].slider} />
           <HomePageHero data={data[0].HomePageWelcome} />
           <HomePageBanner data={data[0].HomePageBannerImgs} />
+          <HomePageFeatured data={data[0].portfolioData} />
         </>
       )}
     </>
