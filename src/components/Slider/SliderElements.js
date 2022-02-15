@@ -6,6 +6,7 @@ export const SliderWrapper = styled.section`
 
   @media screen and (max-width: 375px) {
     padding-bottom: 6rem;
+    margin-bottom: 15rem;
   }
 `;
 
@@ -60,6 +61,8 @@ export const SliderTextWrapper = styled.div`
   }
 
   @media screen and (max-width: 375px) {
+    margin-left: 3rem;
+    margin-right: 3rem;
   }
 `;
 
