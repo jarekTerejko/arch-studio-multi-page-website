@@ -36,6 +36,7 @@ export const NavbarMenuBtn = styled.button`
 
   @media screen and (max-width: 730px) {
     display: flex;
+    transform: translateX(10px);
   }
 `;
 

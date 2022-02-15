@@ -62,7 +62,7 @@ const Navbar = () => {
             <NavbarSiteLinkR to="/" onClick={closeMenu}>
               <ImageEl src={Logo} alt="Logo" />
             </NavbarSiteLinkR>
-            <NavbarNavItems isOpen={isOpen} >
+            <NavbarNavItems isOpen={isOpen}>
               {paths.map((link, i) => {
                 if (i === 0) {
                   return null;
@@ -84,6 +84,7 @@ const Navbar = () => {
               <ImageEl
                 src={isOpen ? X : Bars}
                 alt={isOpen ? "Close Menu" : "Open Menu"}
+                style={{ maxWidth: "20px" }}
               />
             </NavbarMenuBtn>
           </NavbarInnerWrapper>
