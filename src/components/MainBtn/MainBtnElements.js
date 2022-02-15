@@ -11,6 +11,7 @@ export const MainBtnEl = styled(Link)`
 
 export const MainBtnText = styled.span`
   margin-right: 2rem;
-  margin-right: ${({isText})=> isText ? "2rem" : 0 };
+  margin-right: ${({ isText }) => (isText ? "2rem" : 0)};
   text-transform: capitalize;
+  font-weight: 700;
 `;
