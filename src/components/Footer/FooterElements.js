@@ -22,7 +22,7 @@ export const FooterInnerWrapper = styled.div`
     right: 0;
     top: 0;
     height: 100%;
-    width: 130px;
+    width: 125px;
     background: var(--color-white);
 
     @media screen and (max-width: 768px) {
@@ -37,7 +37,7 @@ export const FooterInnerWrapper = styled.div`
 `;
 
 export const FooterLogoWrapper = styled.div`
-  padding: 8rem 4rem;
+  padding: 8rem 5rem;
   background: var(--color-dark);
 
   @media screen and (max-width: 900px) {
@@ -53,7 +53,7 @@ export const FooterNavItems = styled.ul`
   list-style: none;
   display: flex;
   background: var(--color-grey);
-  margin-left: 6rem;
+  margin-left: 4rem;
 
   @media screen and (max-width: 900px) {
     margin-left: 0;

@@ -44,7 +44,7 @@ const Footer = () => {
             })}
           </FooterNavItems>
           <FooterMainBtnWrapper>
-            <MainBtn pathname="about" text="see our portfolio" isText />
+            <MainBtn pathname="portfolio" text="see our portfolio" isText />
           </FooterMainBtnWrapper>
         </FooterInnerWrapper>
       </FooterWrapper>
