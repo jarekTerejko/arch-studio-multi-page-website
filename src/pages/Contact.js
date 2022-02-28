@@ -3,6 +3,7 @@ import Loader from "../components/Loader";
 import IntroHeader from "../components/IntroHeader";
 import useFetch from "../useFetch";
 import ContactSection from "../components/ContactSection";
+import ContactDetailsMapSection from "../components/ContactDetailsMapSection";
 
 const Contact = () => {
   const { data, isLoading, fetchErrorValue } = useFetch("../data.json");
@@ -16,6 +17,9 @@ const Contact = () => {
       ) : (
         <>
           <IntroHeader data={data[0].contactData} />
+          <ContactDetailsMapSection
+            data={data[0].contactData.sectionDetailsAndMap}
+          />
           <ContactSection />
         </>
       )}
