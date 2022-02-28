@@ -64,7 +64,7 @@ const ContactSection = () => {
       <ContactSectionWrapper>
         <ContainerEl>
           <ContactSectionInnerWrapper>
-            <HeadingRegularEl red headingContactForm>
+            <HeadingRegularEl headingContactForm>
               Connect with us
             </HeadingRegularEl>
             <ContactSectionForm onSubmit={handleSubmit}>

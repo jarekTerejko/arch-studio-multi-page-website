@@ -45,6 +45,10 @@ export const ContactSectionInputText = styled.input`
   &.error {
     border-bottom: 1px solid var(--color-red);
     color: var(--color-red);
+
+    &::placeholder {
+      color: var(--color-red);
+    }
   }
 
   &::placeholder {
@@ -63,10 +67,15 @@ export const ContactSectionInputTextarea = styled.textarea`
   border-bottom: 1px solid var(--color-dark);
   padding: 2rem;
   resize: vertical;
+  font-family: var(--font-family-sans);
 
   &.error {
     border-bottom: 1px solid var(--color-red);
     color: var(--color-red);
+
+    &::placeholder {
+      color: var(--color-red);
+    }
   }
 
   &::placeholder {
