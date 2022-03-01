@@ -41,7 +41,6 @@ const Slider = ({ data }) => {
     );
   };
 
-  console.log(data);
   return (
     <>
       <SliderWrapper>
