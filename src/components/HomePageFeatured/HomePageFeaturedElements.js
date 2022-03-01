@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
@@ -16,7 +17,7 @@ export const HomePageFeaturedHeading = styled.div`
   }
 `;
 
-export const HomePageFeaturedGallery = styled.div`
+export const HomePageFeaturedGallery = styled(motion.div)`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
   gap: 30px;
@@ -31,7 +32,7 @@ export const HomePageFeaturedGallery = styled.div`
   }
 `;
 
-export const HomePageGalleryItem = styled.div`
+export const HomePageGalleryItem = styled(motion.div)`
   background-image: ${({ $bgImgDesktop }) =>
     $bgImgDesktop
       ? `linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0,0,0, 0.1)),url(${$bgImgDesktop})`
