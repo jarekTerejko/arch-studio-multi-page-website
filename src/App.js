@@ -29,7 +29,7 @@ function App() {
       <Navbar />
       <main style={{ minHeight: "100vh" }}>
         <AnimatePresence exitBeforeEnter>
-          <Routes location={location} key={location.key}>
+          <Routes location={location} key={location.pathname}>
             <Route
               path="/"
               element={<Home containerVariants={containerVariants} />}
