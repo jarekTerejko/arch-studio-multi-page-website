@@ -14,6 +14,7 @@ export const NotFoundWrapper = styled(motion.div)`
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 2;
 `;
 
 export const NotFoundHeading = styled.h1`
