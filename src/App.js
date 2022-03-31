@@ -20,7 +20,7 @@ function App() {
     },
     exit: {
       opacity: 0,
-      transition: { ease: "easeInOut" },
+      transition: { duration: 0.3 },
     },
   };
 

@@ -4,6 +4,7 @@ import HomePageBanner from "../components/HomePageBanner";
 import HomePageFeatured from "../components/HomePageFeatured";
 import HomePageHero from "../components/HomePageHero";
 import Loader from "../components/Loader";
+import ScrollToTop from "../components/ScrollToTop/ScrollToTop";
 import Slider from "../components/Slider";
 import useFetch from "../useFetch";
 
@@ -12,6 +13,7 @@ const Home = ({ containerVariants }) => {
 
   return (
     <>
+      <ScrollToTop />
       {isLoading ? <Loader /> : null}
       {data.length === 0 ? (
         <ContainerEl>

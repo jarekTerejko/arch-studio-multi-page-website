@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { ContainerEl } from "../components/Container/ContainerElement";
 import Loader from "../components/Loader";
 import PortfolioGallery from "../components/PortfolioGallery";
+import ScrollToTop from "../components/ScrollToTop/ScrollToTop";
 import useFetch from "../useFetch";
 
 const Portfolio = ({ containerVariants }) => {
@@ -9,6 +10,7 @@ const Portfolio = ({ containerVariants }) => {
 
   return (
     <>
+      <ScrollToTop />
       {isLoading ? <Loader /> : null}
       {data.length === 0 ? (
         <ContainerEl>

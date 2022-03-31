@@ -5,12 +5,14 @@ import useFetch from "../useFetch";
 import ContactSection from "../components/ContactSection";
 import ContactDetailsMapSection from "../components/ContactDetailsMapSection";
 import { motion } from "framer-motion";
+import ScrollToTop from "../components/ScrollToTop/ScrollToTop";
 
 const Contact = ({ containerVariants }) => {
   const { data, isLoading, fetchErrorValue } = useFetch("../data.json");
 
   return (
     <>
+      <ScrollToTop />
       {isLoading ? <Loader /> : null}
       {data.length === 0 ? (
         <ContainerEl>

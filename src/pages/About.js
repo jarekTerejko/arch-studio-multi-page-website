@@ -4,6 +4,7 @@ import HeritageSection from "../components/HeritageSection";
 import IntroHeader from "../components/IntroHeader";
 import LeadersSection from "../components/LeadersSection";
 import Loader from "../components/Loader";
+import ScrollToTop from "../components/ScrollToTop/ScrollToTop";
 import useFetch from "../useFetch";
 
 const About = ({ containerVariants }) => {
@@ -11,6 +12,7 @@ const About = ({ containerVariants }) => {
 
   return (
     <>
+      <ScrollToTop />
       {isLoading ? <Loader /> : null}
       {data.length === 0 ? (
         <ContainerEl>

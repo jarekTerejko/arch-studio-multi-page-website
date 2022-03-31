@@ -23,8 +23,8 @@ const card = {
 const container = {
   show: {
     transition: {
-      delayChildren: 0.2,
-      staggerChildren: 0.2,
+      delayChildren: 0.5,
+      staggerChildren: 0.3,
     },
   },
 };
