@@ -7,6 +7,7 @@ import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 import Portfolio from "./pages/Portfolio";
 import { AnimatePresence } from "framer-motion";
+import ScrollToTopBtn from "./components/ScrollToTopBtn";
 
 function App() {
   const location = useLocation();
@@ -27,6 +28,7 @@ function App() {
   return (
     <>
       <Navbar />
+      <ScrollToTopBtn />
       <main style={{ minHeight: "100vh" }}>
         <AnimatePresence exitBeforeEnter>
           <Routes location={location} key={location.pathname}>
